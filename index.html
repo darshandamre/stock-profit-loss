@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>stocks profit-loss</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Stocks</h1>
+      <hr />
+
+      <label for="initial-price">Initial Price</label>
+      <input
+        type="number"
+        id="initial-price"
+        placeholder="enter initial price here"
+      />
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" placeholder="enter quantity here" />
+
+      <label for="current-price">Current Price</label>
+      <input
+        type="number"
+        id="current-price"
+        placeholder="enter current price here"
+      />
+
+      <button id="btn-submit">Tell me!</button>
+
+      <h2 id="output"></h2>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
