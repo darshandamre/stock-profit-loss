@@ -26,6 +26,10 @@ const submitHandler = () => {
   ) {
     return (output.innerHTML = "Please enter all values");
   }
+
+  if (initialPrice.value < 0 || quantity.value < 0 || currentPrice.value < 0) {
+    return (output.innerHTML = "Please enter positive values");
+  }
   let costPrice = initialPrice.value * quantity.value;
   let sellingPrice = currentPrice.value * quantity.value;
 
